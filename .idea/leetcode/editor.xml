@@ -102,6 +102,15 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/G5c51o.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/G5c51o.md" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/G5c51o.java" />
+              <option name="questionId" value="1000324" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/JFETK5.java">
           <value>
             <LeetcodeEditor>
@@ -126,6 +135,15 @@
               <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/JianShengZiLcof.md" />
               <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/JianShengZiLcof.java" />
               <option name="questionId" value="100284" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/KthLargestElementInAnArray.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/KthLargestElementInAnArray.md" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/KthLargestElementInAnArray.java" />
+              <option name="questionId" value="215" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -210,12 +228,30 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/ShortestPathVisitingAllNodes.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/ShortestPathVisitingAllNodes.md" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/ShortestPathVisitingAllNodes.java" />
+              <option name="questionId" value="877" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/ShuZuZhongChuXianCiShuChaoGuoYiBanDeShuZiLcof.java">
           <value>
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/ShuZuZhongChuXianCiShuChaoGuoYiBanDeShuZiLcof.md" />
               <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/ShuZuZhongChuXianCiShuChaoGuoYiBanDeShuZiLcof.java" />
               <option name="questionId" value="100310" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/SmallestKLcci.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/SmallestKLcci.md" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/SmallestKLcci.java" />
+              <option name="questionId" value="1000021" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -279,6 +315,15 @@
               <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/Xoh6Oh.md" />
               <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/Xoh6Oh.java" />
               <option name="questionId" value="1000228" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/Xx4gT2.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/Xx4gT2.md" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/Xx4gT2.java" />
+              <option name="questionId" value="1000340" />
             </LeetcodeEditor>
           </value>
         </entry>

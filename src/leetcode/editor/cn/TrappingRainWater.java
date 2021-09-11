@@ -46,14 +46,20 @@ class Solution {
         Stack<Integer> stack = new Stack<>();
         int res = 0;
         for(int i=0; i<height.length; i++){
-            if(!stack.isEmpty()){
+            // 遍历不断加入更矮的柱子
+            // 当前柱子更高，就要计算一次容量
+            while(!stack.isEmpty() && height[i] > height[stack.peek()]){
                 int midIndex = stack.pop();  // 中间元素的下标
+                if(stack.isEmpty()) break;
                 int midHeight = height[midIndex];  // 中间柱子高度
-                if(stack.isEmpty())
+                int distance = i - stack.peek() -1;
+                int subH = Math.min(height[i], height[stack.peek()]);
+                res += (subH-midHeight) * distance;
 
             }
             stack.push(i);
         }
+        return res;
 
 
     }
