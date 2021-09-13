@@ -48,45 +48,72 @@ public class SubsetsIi {
      */
     class Solution {
     public List<List<Integer>> subsetsWithDup(int[] nums) {
-
-        List<List<Integer>> res = new ArrayList<>();
+        List<List<Integer>> resList = new ArrayList<>();
         Deque<Integer> path = new ArrayDeque<>();
-        // used为false表示同一层， used为true表示下一层
         boolean[] used = new boolean[nums.length];
+        int index = 0;
         Arrays.sort(nums);
-        dfs(nums,0,res,path, used);
-        return res;
+        dfs(nums,resList,path,used,index);
+        return resList;
 
     }
 
-        /**
-         *
-         * @param nums
-         * @param index  当前层要加入的第一个元素下标
-         */
-    public void dfs(int[] nums, int index, List<List<Integer>> res, Deque<Integer> path,  boolean[] used){
-        res.add(new ArrayList<>(path));  // 每递归一次就是一个结果
-        if(index >= nums.length) return;
-
-        // 该层遍历每一个后续元素
-        for(int i = index; i < nums.length; i++){
-            // 判断加入的值和上一个值是否相等
-            if(i>0 && nums[i] == nums[i-1] && !used[i-1]){
-                continue;
-            }
-            path.addLast(nums[i]);
-            // 此处需要标记在该层已使用nums[i]
-            used[i] = true;  // 表示下一层
-            // 调用dfs执行的是下一层节点，不需要考虑nums[i+1]在本层有没有被使用
-
-            dfs(nums, i+1, res, path, used);
-            path.removeLast();
-            // 这里回溯进入for循环下一个下标，本层没有取nums[i] 所以下个循环nums[i+1]可以等于本层的nums[i]
-            // 此处需要标记在该层没有用nums[i]，所以下一层nums[index+1]的值可以等于本层的nums[index]
-            used[i] =false;  // 表示同一层
+    public void dfs(int[] nums, List<List<Integer>> resList, Deque<Integer> path, boolean[] used, int index){
+        resList.add(new ArrayList<>(path));
+        if (index >= nums.length) {
+            return;
         }
+
+        for(int i = index; i<nums.length; i++){
+            if(i >0 && nums[i] == nums[i -1] && !used[i -1]) continue;
+            path.addLast(nums[i]);
+            used[i] = true;
+            dfs(nums,resList,path,used,i+1);
+            path.removeLast();
+            used[i] = false;
+        }
+
     }
-}
+    }
 //leetcode submit region end(Prohibit modification and deletion)
 
 }
+
+
+//    List<List<Integer>> res = new ArrayList<>();
+//    Deque<Integer> path = new ArrayDeque<>();
+//    // used为false表示同一层， used为true表示下一层
+//    boolean[] used = new boolean[nums.length];
+//        Arrays.sort(nums);
+//    dfs(nums,0,res,path, used);
+//        return res;
+//
+//}
+//
+//    /**
+//     *
+//     * @param nums
+//     * @param index  当前层要加入的第一个元素下标
+//     */
+//    public void dfs(int[] nums, int index, List<List<Integer>> res, Deque<Integer> path,  boolean[] used){
+//        res.add(new ArrayList<>(path));  // 每递归一次就是一个结果
+//        if(index >= nums.length) return;
+//
+//        // 该层遍历每一个后续元素
+//        for(int i = index; i < nums.length; i++){
+//            // 判断加入的值和上一个值是否相等
+//            if(i>0 && nums[i] == nums[i-1] && !used[i-1]){
+//                continue;
+//            }
+//            path.addLast(nums[i]);
+//            // 此处需要标记在该层已使用nums[i]
+//            used[i] = true;  // 表示下一层
+//            // 调用dfs执行的是下一层节点，不需要考虑nums[i+1]在本层有没有被使用
+//
+//            dfs(nums, i+1, res, path, used);
+//            path.removeLast();
+//            // 这里回溯进入for循环下一个下标，本层没有取nums[i] 所以下个循环nums[i+1]可以等于本层的nums[i]
+//            // 此处需要标记在该层没有用nums[i]，所以下一层nums[index+1]的值可以等于本层的nums[index]
+//            used[i] =false;  // 表示同一层
+//        }
+//    }

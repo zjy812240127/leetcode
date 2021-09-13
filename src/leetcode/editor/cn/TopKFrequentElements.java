@@ -53,15 +53,16 @@ class Solution {
          *      2.2 后面每次加入一个元素与堆顶比较，大于堆顶元素就替换堆顶元素
          *
          */
-        Map<Integer, Integer> map = new HashMap<>();
-        for(int i=0; i<nums.length; i++){
-            if(map.containsKey(nums[i])){
-                map.put(nums[i], map.get(nums[i]) +1);
-            }else {
+        Map<Integer,Integer> map = new HashMap<>();
+
+        for(int i=0;i<nums.length;i++){
+            if(map.containsKey(nums[i])) {
+                map.put(nums[i], map.get(nums[i]) + 1);
+            }else{
                 map.put(nums[i], 1);
             }
         }
-        // 定义从小到大排的堆
+
         PriorityQueue<Integer> pq = new PriorityQueue<>(new Comparator<Integer>() {
             @Override
             public int compare(Integer o1, Integer o2) {
@@ -69,22 +70,22 @@ class Solution {
             }
         });
 
-        // 遍历map的keys，进行排序挑选出频率最高的keys
-        for(Integer key: map.keySet()){
-            if(pq.size()< k){
-                pq.add(key);
-            }else if(map.get(key) >map.get(pq.peek())){
-                pq.remove();
-                pq.add(key);
+        for(Integer key:map.keySet()){
+            if(pq.size() < k) pq.add(key);
+            else{
+                if(map.get(key) > map.get(pq.peek())){
+                    pq.remove();
+                    pq.add(key);
+                }
             }
         }
 
-        int[] resInt = new int[k];
-        // 取出堆中的元素
+        int[] res = new int[k];
         for(int i=0; i<k; i++){
-            resInt[i] = pq.remove();
+            res[i] = pq.remove();
         }
-        return resInt;
+        return res;
+
 
 
 
@@ -95,3 +96,37 @@ class Solution {
 //leetcode submit region end(Prohibit modification and deletion)
 
 }
+
+
+//    Map<Integer, Integer> map = new HashMap<>();
+//        for(int i=0; i<nums.length; i++){
+//        if(map.containsKey(nums[i])){
+//        map.put(nums[i], map.get(nums[i]) +1);
+//        }else {
+//        map.put(nums[i], 1);
+//        }
+//        }
+//        // 定义从小到大排的堆
+//        PriorityQueue<Integer> pq = new PriorityQueue<>(new Comparator<Integer>() {
+//@Override
+//public int compare(Integer o1, Integer o2) {
+//        return map.get(o1) - map.get(o2);
+//        }
+//        });
+//
+//        // 遍历map的keys，进行排序挑选出频率最高的keys
+//        for(Integer key: map.keySet()){
+//        if(pq.size()< k){
+//        pq.add(key);
+//        }else if(map.get(key) >map.get(pq.peek())){
+//        pq.remove();
+//        pq.add(key);
+//        }
+//        }
+//
+//        int[] resInt = new int[k];
+//        // 取出堆中的元素
+//        for(int i=0; i<k; i++){
+//        resInt[i] = pq.remove();
+//        }
+//        return resInt;

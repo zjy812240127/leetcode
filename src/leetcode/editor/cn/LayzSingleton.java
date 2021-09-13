@@ -19,12 +19,12 @@ public class LayzSingleton {
 
     private LayzSingleton(){}
 
-    private static class Instance{
-        private static LayzSingleton instance = new LayzSingleton();
+    private static class LazyInstance{
+        public static LayzSingleton instance = new LayzSingleton();
     }
 
     public LayzSingleton getInstance(){
-        return Instance.instance;
+        return LazyInstance.instance;
     }
 
 
