@@ -120,6 +120,15 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/GasStation.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/GasStation.md" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/GasStation.java" />
+              <option name="questionId" value="134" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/JFETK5.java">
           <value>
             <LeetcodeEditor>
@@ -153,6 +162,15 @@
               <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/KthLargestElementInAnArray.md" />
               <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/KthLargestElementInAnArray.java" />
               <option name="questionId" value="215" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/KthSmallestElementInABst.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/KthSmallestElementInABst.md" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/KthSmallestElementInABst.java" />
+              <option name="questionId" value="230" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -201,6 +219,15 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/MergeSortedArray.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/MergeSortedArray.md" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/MergeSortedArray.java" />
+              <option name="questionId" value="88" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/MinimumRemoveToMakeValidParentheses.java">
           <value>
             <LeetcodeEditor>
@@ -216,6 +243,15 @@
               <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/NQueens.md" />
               <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/NQueens.java" />
               <option name="questionId" value="51" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/PartitionEqualSubsetSum.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/PartitionEqualSubsetSum.md" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/PartitionEqualSubsetSum.java" />
+              <option name="questionId" value="416" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -243,6 +279,15 @@
               <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/RemoveDuplicateNodeLcci.md" />
               <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/RemoveDuplicateNodeLcci.java" />
               <option name="questionId" value="100163" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/RemoveNthNodeFromEndOfList.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/RemoveNthNodeFromEndOfList.md" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/RemoveNthNodeFromEndOfList.java" />
+              <option name="questionId" value="19" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -309,12 +354,30 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/SpiralMatrix.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/SpiralMatrix.md" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/SpiralMatrix.java" />
+              <option name="questionId" value="54" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/SpiralMatrixIi.java">
           <value>
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/SpiralMatrixIi.md" />
               <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/SpiralMatrixIi.java" />
               <option name="questionId" value="59" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/Sqrtx.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/Sqrtx.md" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/Sqrtx.java" />
+              <option name="questionId" value="69" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -360,6 +423,15 @@
               <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/TrappingRainWater.md" />
               <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/TrappingRainWater.java" />
               <option name="questionId" value="42" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/WordBreak.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/WordBreak.md" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/WordBreak.java" />
+              <option name="questionId" value="139" />
             </LeetcodeEditor>
           </value>
         </entry>

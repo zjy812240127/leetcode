@@ -57,41 +57,46 @@ package leetcode.editor.cn;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.PriorityQueue;
 
 public class LruCache {
     public static void main(String[] args) {
-        //leetcode.editor.cn.LruCache.LruCache solution = new LruCache().new LruCache();
+        LRUCache lruCache = new LruCache().new LRUCache(16);
     }
     //leetcode submit region begin(Prohibit modification and deletion)
-//class LruCache {
-    //    int capacity;
-    //    Map<Integer,Integer> map;
-    //public LruCache(int capacity) {
-    //    this.capacity = capacity;
-    //    map = new LinkedHashMap<>(capacity,0.75f,true);
-    //}
-    //
-    //public int get(int key) {
-    //    if(!map.containsKey(key)) return -1;
-    //    else {
-    //        int val = map.get(key);
-    //        map.remove(key);
-    //        map.put(key,val);
-    //        return val;
-    //    }
-    //}
-    //
-    //public void put(int key, int value) {
-    //    if(map.containsKey(key)){
-    //        map.remove(key);
-    //    }else{
-    //        if(map.size() == capacity){
-    //            map.remove(map.entrySet().iterator().next().getKey());
-    //        }
-    //    }
-    //    map.put(key,value);
-    //}
-//}
+class LRUCache {
+        int capacity;
+        LinkedHashMap<Integer,Integer> map;
+
+        LRUCache(int capacity){
+            this.capacity = capacity;
+            map = new LinkedHashMap<Integer, Integer>(capacity,0.75f,true);
+        }
+
+        public int get(int key){
+            if(map.containsKey(key)){
+                int val = map.get(key);
+                map.remove(key);
+                map.put(key,val);
+                return val;
+            }else{
+                return -1;
+            }
+        }
+
+        public void put(int key, int val){
+            if(map.containsKey(key)){
+                map.remove(key);
+            }else{
+                if(map.size() == capacity){
+                    map.remove(map.entrySet().iterator().next().getKey());
+                }
+            }
+            map.put(key,val);
+        }
+
+
+}
 
 /**
  * Your LRUCache object will be instantiated and called as such:
@@ -102,3 +107,31 @@ public class LruCache {
 //leetcode submit region end(Prohibit modification and deletion)
 
 }
+
+//    int capacity;
+//    Map<Integer,Integer> map;
+//public LruCache(int capacity) {
+//    this.capacity = capacity;
+//    map = new LinkedHashMap<>(capacity,0.75f,true);
+//}
+//
+//public int get(int key) {
+//    if(!map.containsKey(key)) return -1;
+//    else {
+//        int val = map.get(key);
+//        map.remove(key);
+//        map.put(key,val);
+//        return val;
+//    }
+//}
+//
+//public void put(int key, int value) {
+//    if(map.containsKey(key)){
+//        map.remove(key);
+//    }else{
+//        if(map.size() == capacity){
+//            map.remove(map.entrySet().iterator().next().getKey());
+//        }
+//    }
+//    map.put(key,value);
+//}
