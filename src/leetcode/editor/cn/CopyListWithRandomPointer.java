@@ -66,6 +66,10 @@
 // Related Topics 哈希表 链表 👍 723 👎 0
 
 package leetcode.editor.cn;
+
+import java.util.HashMap;
+import java.util.Map;
+
 public class CopyListWithRandomPointer {
     public static void main(String[] args) {
         Solution solution = new CopyListWithRandomPointer().new Solution();
@@ -88,9 +92,48 @@ class Node {
 
 class Solution {
     public Node copyRandomList(Node head) {
+        Map<Node, Node> map = new HashMap<>();
+        Node oldHead = head;
+        Node dummy = new Node(-1);
+        Node newHead = new Node(oldHead.val);
+        dummy.next = newHead;
+
+        map.put(oldHead, newHead);
+        while(oldHead != null){
+            Node oldNext = oldHead.next;
+            Node newNext = new Node(oldNext.val);
+            newHead.next = newNext;
+            map.put(oldNext, newNext);
+            oldHead = oldHead.next;
+            newHead = newHead.next;
+        }
+
+        Node tmpNode = dummy.next;
+        while(head != null){
+            tmpNode.random = map.get(head.random) == null ? null: map.get(head.random);
+            head = head.next;
+            tmpNode = tmpNode.next;
+        }
+
+        return dummy.next;
+
 
     }
 }
+
+//class Node{
+//    int val;
+//    Node next;
+//    Node random;
+//    Node(int val){
+//        this.val = val;
+//    }
+//    Node(int val, Node next, Node random){
+//        this.val = val;
+//        this.next = next;
+//        this.random = random;
+//    }
+//}
 //leetcode submit region end(Prohibit modification and deletion)
 
 }
