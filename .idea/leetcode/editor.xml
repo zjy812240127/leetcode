@@ -183,6 +183,15 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/JumpGameIi.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/JumpGameIi.md" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/JumpGameIi.java" />
+              <option name="questionId" value="45" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/KthLargestElementInAnArray.java">
           <value>
             <LeetcodeEditor>
@@ -300,6 +309,24 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/Permutations.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/Permutations.md" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/Permutations.java" />
+              <option name="questionId" value="46" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/PermutationsIi.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/PermutationsIi.md" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/PermutationsIi.java" />
+              <option name="questionId" value="47" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/PopulatingNextRightPointersInEachNode.java">
           <value>
             <LeetcodeEditor>
@@ -354,6 +381,15 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/RobotInAGridLcci.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/RobotInAGridLcci.md" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/RobotInAGridLcci.java" />
+              <option name="questionId" value="1000011" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/RotateImage.java">
           <value>
             <LeetcodeEditor>
@@ -369,6 +405,15 @@
               <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/RotateList.md" />
               <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/RotateList.java" />
               <option name="questionId" value="61" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/RouteBetweenNodesLcci.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/RouteBetweenNodesLcci.md" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/RouteBetweenNodesLcci.java" />
+              <option name="questionId" value="100171" />
             </LeetcodeEditor>
           </value>
         </entry>
