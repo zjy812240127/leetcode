@@ -17,6 +17,24 @@ public class GetKthMagicNumberLcci {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int getKthMagicNumber(int k) {
+        /**
+         *  丑数，每次都比较 x_a * 3, x_b * 5, x_c * 7, 取出其中最小的值，
+         *  当第i个元素被取用后，乘以他的质数因该在下次乘以序列中的第i+1个元素
+         */
+       // if(k ==1) return 1;
+        int[] dp = new int[k];
+        dp[0] = 1;
+        int a = 0, b=0, c=0;
+
+        for(int i=1; i<k; i++){
+            int x1 = dp[a]*3, x2 = dp[b]*5, x3 = dp[c]*7;
+            dp[i] = Math.min(Math.min(x1,x2), x3);
+            if(dp[i] == x1) a++;
+            if(dp[i] == x2) b++;
+            if(dp[i] == x3) c++;
+        }
+
+        return dp[k-1];
 
 
     }

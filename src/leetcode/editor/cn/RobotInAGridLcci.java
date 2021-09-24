@@ -33,33 +33,33 @@ import java.util.List;
 
 public class RobotInAGridLcci {
     public static void main(String[] args) {
-        Solution solution = new RobotInAGridLcci().new Solution();
-    }
-    //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
-    public List<List<Integer>> pathWithObstacles(int[][] obstacleGrid) {
-        List<List<Integer>> res = new ArrayList<>();
-        Deque<int[][]> path = new ArrayDeque<>();
-
-    }
-
-    public void dfs(int[][] obstacleGrid, List<List<Integer>> res, int x, int y, Deque<int[][]> path ){
-        if(x<0 || x >= obstacleGrid.length || y<0 || y >= obstacleGrid[0].length) return;
-        if(obstacleGrid[x][y] == 1) return;  // 障碍
-
-        int[][] arr = new int[1][2];
-        arr[0][0] = x;
-        arr[0][1] = y;
-        path.addLast(arr);
-
-
-        if(x == obstacleGrid.length-1 && y == obstacleGrid[0].length -1) {
-            res.add(new ArrayList<>(arr));
-            return;
-        }
-
-
-    }
+//        Solution solution = new RobotInAGridLcci().new Solution();
+//    }
+//    //leetcode submit region begin(Prohibit modification and deletion)
+//class Solution {
+//    public List<List<Integer>> pathWithObstacles(int[][] obstacleGrid) {
+//        List<List<Integer>> res = new ArrayList<>();
+//        Deque<int[][]> path = new ArrayDeque<>();
+//
+//    }
+//
+//    public void dfs(int[][] obstacleGrid, List<List<Integer>> res, int x, int y, Deque<int[][]> path ){
+//        if(x<0 || x >= obstacleGrid.length || y<0 || y >= obstacleGrid[0].length) return;
+//        if(obstacleGrid[x][y] == 1) return;  // 障碍
+//
+//        int[][] arr = new int[1][2];
+//        arr[0][0] = x;
+//        arr[0][1] = y;
+//        path.addLast(arr);
+//
+//
+//        if(x == obstacleGrid.length-1 && y == obstacleGrid[0].length -1) {
+//            res.add(new ArrayList<>(arr));
+//            return;
+//        }
+//
+//
+//    }
 }
 //leetcode submit region end(Prohibit modification and deletion)
 
