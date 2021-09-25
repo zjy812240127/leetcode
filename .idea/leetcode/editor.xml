@@ -129,6 +129,15 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/EvaluateReversePolishNotation.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/EvaluateReversePolishNotation.md" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/EvaluateReversePolishNotation.java" />
+              <option name="questionId" value="150" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/FindLargestValueInEachTreeRow.java">
           <value>
             <LeetcodeEditor>
@@ -360,6 +369,15 @@
               <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/PermutationILcci.md" />
               <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/PermutationILcci.java" />
               <option name="questionId" value="100241" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/PermutationIiLcci.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/PermutationIiLcci.md" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/PermutationIiLcci.java" />
+              <option name="questionId" value="100348" />
             </LeetcodeEditor>
           </value>
         </entry>
