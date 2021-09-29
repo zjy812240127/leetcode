@@ -80,8 +80,31 @@ class Solution {
     public int numDecodings(String s) {
         /**
          *  动态规划
+         *  与前面一个数字组合x，
+         *
+         *   10<= x<=26 dp[i] = dp[i-1] + dp[i-2]
+         *
          */
         // TODO
+        if(s.charAt(0) == '0') return 0;
+
+        int[] dp = new int[s.length()+1];
+        s = " " +s;
+        /** dp[0] =1 为了让dp[i] = dp[i-1] + dp[i-2]判断不成立，因为b*10等于0，sum不会》=10 */
+        dp[0] = 1;
+
+        for(int i=1;i<dp.length; i++){
+            int a = s.charAt(i) - '0';
+            int b = s.charAt(i-1) - '0';
+            // 与前一位组成的数字
+            int sum = a + b*10;
+            if(a >=1 && a<=9) dp[i] = dp[i-1];
+            /** 此处是在以上基础上叠加 */
+            if(sum >=10 && sum<=26) dp[i] += dp[i-2];
+        }
+
+        return dp[s.length()-1];
+
 
     }
 
