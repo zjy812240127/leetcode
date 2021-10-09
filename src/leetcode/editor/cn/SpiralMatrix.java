@@ -33,7 +33,7 @@ package leetcode.editor.cn;
 import java.util.List;
 
 public class SpiralMatrix {
-    public static void main(String[] args) {
+    public static void main(String[] args)       v   {
         Solution solution = new SpiralMatrix().new Solution();
     }
     //leetcode submit region begin(Prohibit modification and deletion)
