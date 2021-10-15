@@ -17,6 +17,7 @@ public class ThreadPoolExecutorDemo {
                 new ThreadPoolExecutor.AbortPolicy());
 
         for (int i = 0; i < 8; i++) {
+            // 将任务扔到线程池里运行
             tpe.execute(()->{
                 try {
                     /** 阻塞，模拟线程满了后的拒绝策略 */
