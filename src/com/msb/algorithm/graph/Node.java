@@ -1,7 +1,6 @@
-package com.msb.algorithm;
+package com.msb.algorithm.graph;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * 图中的点

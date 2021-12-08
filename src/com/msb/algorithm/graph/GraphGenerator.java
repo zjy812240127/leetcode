@@ -1,4 +1,4 @@
-package com.msb.algorithm;
+package com.msb.algorithm.graph;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -26,7 +26,7 @@ public class GraphGenerator {
 
     }
 
-    private static Graph getMyGraph() {
+    public static Graph getMyGraph() {
         Graph graph = new Graph();
 
         List<int[]> source = getSource();
@@ -58,6 +58,12 @@ public class GraphGenerator {
             fromNode.out ++;
             toNode.in ++;
         });
+
+        Edge edge1 = new Edge(100, new Node(1), new Node(3));
+        Edge edge2 = new Edge(50, new Node(5), new Node(16));
+        graph.edges.add(edge1);
+        graph.edges.add(edge2);
+
         return graph;
     }
 
@@ -69,9 +75,14 @@ public class GraphGenerator {
         // [weight, from, to]， 边的权重，起点，终点
         List<int[]> source = new ArrayList<>();
         for (int i = 0; i < 20; i++) {
-            int[] edge = new int[]{1,i,i+1};
+            // Node from = new Node(i);
+            // Node to = new Node(i+1);
+
+            int[] edge = new int[]{i,i,i+1};
             source.add(edge);
         }
+
+        // new Edge(100,,18);
         return source;
     }
 

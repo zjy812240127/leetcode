@@ -1,4 +1,4 @@
-package com.msb.algorithm;
+package com.msb.algorithm.graph;
 
 /**
  * 图的边
