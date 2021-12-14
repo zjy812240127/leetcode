@@ -1,4 +1,4 @@
-package com.msb.algorithm;
+package com.msb.algorithm.tree;
 
 /**
  * 前缀树，搜索一个字符串在字符串数组中出现的次数 或者以某个字符串开头的字符串在数组中个数

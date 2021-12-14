@@ -1,4 +1,4 @@
-package com.msb.algorithm;
+package com.msb.algorithm.tree;
 
 import java.util.HashMap;
 import java.util.List;
