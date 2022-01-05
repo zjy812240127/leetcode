@@ -3,6 +3,7 @@ package com.msb.algorithm.stack;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Stack;
+import java.util.TreeMap;
 
 /**
  * 单调栈：查找[1,2,3,5,2,3,4,1,2]每个元素左侧res[i][0]和右侧res[i][1]第一个比他小的元素
@@ -13,6 +14,7 @@ import java.util.Stack;
 public class MonoStack {
 
     public static void main(String[] args) {
+
         int[] arr = {1, 2, 3, 5, 2, 3, 4, 1, 2};
         int[][] monotonous = getMonotonous(arr);
         for (int i = 0; i < monotonous.length; i++) {
